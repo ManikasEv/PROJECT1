@@ -19,7 +19,7 @@ $p = $_POST["pass"];
 
 // Παιρνω το password hash από τη βαση χρησιμοποιώντας πχ. το firstname 
 // που μου εδωσε ο χρήστης:
-$stmt = $pdo->prepare('SELECT * FROM users WHERE fn=:fn');
+$stmt = $pdo->prepare('SELECT * FROM users WHERE first_name=:fn');
 $stmt->execute(["fn"=>$_POST["fn"]]);
 
 
@@ -31,7 +31,7 @@ if (!$row) {
 }
 else {
     // Το αποθηκευμενο hash για αυτόν τον χρήστη:
-    $hash = $row['pass']; 
+    $hash = $row['pwd']; 
 
     // Επιβεβαιώνουμε ότι το αποθηκευμενο hash "ταιριάζει" με
     // το password που μας εδωσε ο χρήστης:
