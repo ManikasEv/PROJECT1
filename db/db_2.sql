@@ -11,24 +11,26 @@ CREATE TABLE users (
   address VARCHAR(45) NOT NULL,
   PRIMARY KEY  (user_id),
   KEY idx_user_amka (amka)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE dates(
   hospital_name VARCHAR(60) NOT NULL,
   Vaccine_type VARCHAR(60) NOT NULL,
-  day_month_year VARCHAR(80) NOT NULL,
+  day_month_year VARCHAR(60) NOT NULL,
+  time_of_appointment VARCHAR(60) NOT NULL,
   availability INT NOT NULL,
-  PRIMARY KEY (hospital_name)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  KEY (hospital_name)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE hospitals(
+  hospital_id INT NOT NULL AUTO_INCREMENT,
   hos_name VARCHAR(60) NOT NULL,
   address VARCHAR(45) NOT NULL,
   city VARCHAR(45) NOT NULL,
   Vaccine_1 VARCHAR(60) NOT NULL,
-  description TEXT,
+  description1 TEXT,
   Vaccine_2 VARCHAR(60) NOT NULL,
-  description TEXT,
-  PRIMARY KEY (city)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  description2 TEXT,
+  PRIMARY KEY (hospital_id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
