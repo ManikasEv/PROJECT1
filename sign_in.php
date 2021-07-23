@@ -15,13 +15,6 @@ $pdo = new PDO($dsn, $dbuser, $dbpass, $options);
 
 
 $fn = $_POST["fn"];
-$ln = $_POST["ln"];
-$tel = $_POST["tele"];
-$afm = $_POST["afm"];
-$amka = $_POST["amka"];
-$addr = $_POST["add"];
-$age = $_POST["age"];
-$email = $_POST["email"];
 $p = $_POST["pass"];
 
 // Παιρνω το password hash από τη βαση χρησιμοποιώντας πχ. το firstname 
