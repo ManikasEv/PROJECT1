@@ -19,7 +19,7 @@
     $p = $_POST["pass"];
 
 
-$dbname = "users";
+$dbname = "db_2";
 $dbuser = "root";
 $passwd = "strickland!A1";
 $port = 3306;
@@ -32,7 +32,7 @@ $pdo = new PDO($dsn, $dbuser, $passwd, $options);
  
 $hash = password_hash($_POST["pass"], PASSWORD_DEFAULT);
 
-$stmt = $pdo->prepare('INSERT INTO usera(firstname,lastname,telephone,AFM,AMKA,address,age,email,password) VALUES(:fn , :ln, :tel, :afm, :amka, :addr,:age,:email,:p)');
+$stmt = $pdo->prepare('INSERT INTO users(first_name,last_name,telephone,afm,amka,address,age,email,pwd) VALUES(:fn , :ln, :tel, :afm, :amka, :addr,:age,:email,:p)');
 $stmt->execute(["fn"=> $_POST["fn"],"ln"=> $_POST["ln"],"tel"=> $_POST["tele"],"afm"=> $_POST["afm"],"amka"=>$_POST["amka"],"addr"=>$_POST["add"],"age"=>$_POST["age"],"email"=>$_POST["email"], "p"=> $hash]);
 echo("Registration Complete");        
         
