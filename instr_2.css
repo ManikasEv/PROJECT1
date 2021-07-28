@@ -1,0 +1,32 @@
+.topnav { /*  Style the navbar */
+    overflow: hidden;
+    background-color: #e9e9e9;
+    border-bottom: 2px solid;
+  }
+  
+  .topnav a /*  navbar links */{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .container1{
+    background-color:#2196F3;
+    width:750px;
+    height: 650px;
+    top: 10%;
+    left:11%;
+    position: absolute;
+    margin-top: 5%;
+  }
+  .text3/*Style the text(Citizens who have registered...)*/{
+    position: absolute;
+    top: 30%;
+  }
+  .text4/*Style the text(Citizens who have registered...)*/{
+    position: absolute;
+    top: 36%;
+  }
