@@ -41,7 +41,7 @@ else {
         
 
         $_SESSION["fn"] = $row;
-        echo"singed in";
+        header('location: covid-app.html');
         
     }
     else {
