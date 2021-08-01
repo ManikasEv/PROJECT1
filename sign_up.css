@@ -1,0 +1,68 @@
+body{
+    background-image: url("https://wmcurrent.com/wp-content/uploads/2021/01/Coronavirus.jpg");
+
+}
+.form1{ /* Style username */
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+.form2{ /* Style email */
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+.form3{ /* Style password */
+    position: absolute;
+    left: 5%;
+    top: 25%;
+}
+.form4{ /* Style confirm-password */
+    position: absolute;
+    left: 5%;
+    top: 30%;
+}
+.form5{ /* Style name */
+    position: absolute;
+    left: 5%;
+    top: 35%;
+}
+.form6{ /* Style surname */
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+.form7{ /* Style gender */
+    position: absolute;
+    left: 5%;
+    top: 45%;
+}
+.form8{ /* Style birth-date */
+    position: absolute;
+    left: 5%;
+    top: 50%;
+}
+.form9{ /* Style phone-number */
+    position: absolute;
+    left: 5%;
+    top: 55%;
+}
+.form10{    /* Style afm */
+    position: absolute;
+    left: 5%;
+    top: 60%;
+}
+.form11{    /* Style amka */
+    position: absolute;
+    left: 5%;
+    top: 65%;
+}
+.form12{    /* Style submit */
+    position: absolute;
+    left: 5%;
+    top: 70%;  
+}
+h1{/* Style the h1(Registration) */
+    position: absolute;
+    left:   5%;
+}

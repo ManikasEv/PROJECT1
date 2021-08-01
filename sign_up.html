@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="sign_up.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
+    <title>Register</title>
+</head>
+<body>
+        <h1>Registration</h1>
+        <form action="do_registration.php" method="POST">
+            <div class="form1">Username: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="user_name" id="user_name" pattern="[A-Za-z]{8,}" title="8 or more charachers"
+                /></div>
+                
+            <div class="form2">E-mail: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="email" id="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title ="use a valid email" /></div>
+
+            <div class="form3">Password:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="password" name="pass" placeholder="enter your password"  pattern="(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,10}" title="Must contain at least one number,one letter and one special characher and at least 8 or more characters"   id="password" required></div>
+
+            <div class="form4">
+            Confirm Password: &nbsp<input type="password" name="cpw" placeholder="confirm your password"   pattern="(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,10}" title="Must contain at least one number,one letter and one special characher and at least 8 or more characters"  id="confirm_password" required> </div>
+
+
+            <div class="form5">
+            Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="fn" id="first_name"
+            pattern="[A-Za-z]{3,15}" title="3 to 15 charachers">
+            </div>
+
+
+            <div class="form6">
+            Surname:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="ln" id="last_name"
+            pattern="[A-Za-z]{3,15}" title="3 to 15 charachers">
+            </div>
+
+
+            <div class="form7">
+            Gender:<input type="radio" name="gender" id="gender" value="1">Male
+            <input type="radio" name="gender" value="0">Female
+            <input type="radio" name="gender" value="2">Not applicable
+            </div>
+
+            <div class="form8">
+            Birht-date:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="date" name="age" id="birth_date">
+            </div>
+
+            <div class="form9">
+            Phone-number:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="tele" id="phone_number"
+            pattern="[69]+[0-9]{10}" title="3 to 15 charachers">
+            </div>
+
+            <div class="form10">
+                AFM:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" placeholder="009882823" name="afm" pattern="[0-9]{9}" title="9 numbers">
+              </div>
+          
+            <div class="form11">AMKA: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" placeholder="009882823445" name="amka" pattern="[0-9]{11}" title="11 numbers">
+            </div>
+
+            <div class="form12">
+
+                <button id="btn" >Submit</button>
+            </div>
+
+    </form>
+</body>
+</html>
