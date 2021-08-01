@@ -1,0 +1,28 @@
+body{
+    background-image: url("https://ysm-res.cloudinary.com/image/upload/ar_16:9,c_fill,dpr_3.0,f_auto,g_faces:auto,q_auto:eco,w_500/v1/yale-medicine/live-prod/ym_new/images/6117d506-0da7-463e-9973-527889dc2b31_tcm990-407483.jpg");
+    
+}
+h1{/* Style the h1(Registration) */
+    position: absolute;
+    left:   5%;
+}
+.form1{/* Style username */
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+.form2{ /* Style password  */
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+.form3{ /* Style submit */
+    position: absolute;
+    left: 5%;
+    top: 25%;  
+}
+.form4{ /* Style havent you created the account yet */
+    position: absolute;
+    left: 12.8%;
+    top: 25%;  
+}
