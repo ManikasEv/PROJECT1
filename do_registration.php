@@ -18,6 +18,7 @@
     $email = $_POST["email"];
     $p = $_POST["pass"];
     $g = $_POST["gend"];
+    $u = $_POST["user_name"];
 
 $dbname = "db_2";
 $dbuser = "root";
@@ -32,8 +33,8 @@ $pdo = new PDO($dsn, $dbuser, $passwd, $options);
  
 $hash = password_hash($_POST["pass"], PASSWORD_DEFAULT);
 
-$stmt = $pdo->prepare('INSERT INTO users(first_name,last_name,telephone,afm,amka,address,age,email,pwd,gender) VALUES(:fn , :ln, :tel, :afm, :amka, :addr,:age,:email,:p,:g)');
-$stmt->execute(["fn"=>$_POST["fn"],"ln"=> $_POST["ln"],"tel"=> $_POST["tele"],"afm"=> $_POST["afm"],"amka"=>$_POST["amka"],"addr"=>$_POST["add"],"age"=>$_POST["age"],"email"=>$_POST["email"],"p"=> $hash,"g"=>$_POST["gend"]]);
+$stmt = $pdo->prepare('INSERT INTO users(first_name,last_name,telephone,afm,amka,address,age,email,pwd,gender,username) VALUES(:fn , :ln, :tel, :afm, :amka, :addr,:age,:email,:p,:g,:u)');
+$stmt->execute(["fn"=>$_POST["fn"],"ln"=> $_POST["ln"],"tel"=> $_POST["tele"],"afm"=> $_POST["afm"],"amka"=>$_POST["amka"],"addr"=>$_POST["add"],"age"=>$_POST["age"],"email"=>$_POST["email"],"p"=> $hash,"g"=>$_POST["gend"],"u"=>$_POST["user_name"]]);
 echo("Registration  ");        
         
 ?>
