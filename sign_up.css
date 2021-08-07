@@ -57,10 +57,15 @@ body{
     left: 5%;
     top: 65%;
 }
-.form12{    /* Style submit */
+.form12{    /* Style address */
     position: absolute;
     left: 5%;
     top: 70%;  
+}
+.form13{    /* Style submit */
+    position: absolute;
+    left: 5%;
+    top: 75%;  
 }
 h1{/* Style the h1(Registration) */
     position: absolute;
